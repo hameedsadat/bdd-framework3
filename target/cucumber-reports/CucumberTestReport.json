@@ -11,8 +11,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1331714300,
-              "status": "passed"
+              "duration": 314028700,
+              "error_message": "java.lang.ExceptionInInitializerError\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n\tat ✽.Given User is on TEST Environment page(Features/Login.feature:4)\r\nCaused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @ff5b51f\r\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)\r\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)\r\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)\r\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:172)\r\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\r\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.runBackground(CucumberScenario.java:59)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:42)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
+              "status": "failed"
             },
             "line": 4,
             "name": "User is on TEST Environment page",
@@ -27,7 +28,7 @@
         "before": [
           {
             "result": {
-              "duration": 3026628900,
+              "duration": 3605367400,
               "status": "passed"
             },
             "match": {
@@ -35,14 +36,14 @@
             }
           }
         ],
-        "line": 25,
-        "name": "Login to My Account with multiple users",
+        "line": 7,
+        "name": "Login to MyAccount",
         "description": "",
-        "id": "login-to-test-environment;login-to-my-account-with-multiple-users;;2",
+        "id": "login-to-test-environment;login-to-myaccount",
         "after": [
           {
             "result": {
-              "duration": 847470900,
+              "duration": 539214600,
               "status": "passed"
             },
             "match": {
@@ -51,14 +52,13 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 133588400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 17,
+            "line": 8,
             "name": "User click on MyAccount",
             "match": {
               "location": "loginStepDefiniton.user_click_on_MyAccount()"
@@ -67,10 +67,9 @@
           },
           {
             "result": {
-              "duration": 265301200,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 18,
+            "line": 9,
             "name": "User click on Login",
             "match": {
               "location": "loginStepDefiniton.user_click_on_Login()"
@@ -79,10 +78,9 @@
           },
           {
             "result": {
-              "duration": 296724900,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 19,
+            "line": 10,
             "name": "User enters username \u0027sdet@tekschool.us\u0027 and Password \u0027sdet\u0027",
             "match": {
               "arguments": [
@@ -97,18 +95,13 @@
               ],
               "location": "loginStepDefiniton.user_enters_username_sdet_tekschool_us_and_Password_sdet(String,String)"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 833795300,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 20,
+            "line": 11,
             "name": "User click on Login button",
             "match": {
               "location": "loginStepDefiniton.user_click_on_Login_button()"
@@ -117,10 +110,9 @@
           },
           {
             "result": {
-              "duration": 16462800,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 21,
+            "line": 12,
             "name": "User Should be logged in to user Dashboard",
             "match": {
               "location": "loginStepDefiniton.user_Should_be_logged_in_to_user_Dashboard()"
@@ -130,409 +122,8 @@
         ],
         "tags": [
           {
-            "line": 15,
-            "name": "@MultipleUsers"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1044401300,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on TEST Environment page",
-            "match": {
-              "location": "loginStepDefiniton.user_is_on_TEST_Environment_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2244638100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Initializer.beforeHooks()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Login to My Account with multiple users",
-        "description": "",
-        "id": "login-to-test-environment;login-to-my-account-with-multiple-users;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 734130800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Initializer.afterHooks()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 108067600,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User click on MyAccount",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_MyAccount()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 257073000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User click on Login",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_Login()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 285549700,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters username \u0027student@tekschool.us\u0027 and Password \u0027TEST\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "student@tekschool.us",
-                  "offset": 22
-                },
-                {
-                  "val": "TEST",
-                  "offset": 58
-                }
-              ],
-              "location": "loginStepDefiniton.user_enters_username_sdet_tekschool_us_and_Password_sdet(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 250116200,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User click on Login button",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7373600,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Account Login]\u003e but was:\u003c[My Account]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepDefinitions.loginStepDefiniton.user_Should_be_logged_in_to_user_Dashboard(loginStepDefiniton.java:57)\r\n\tat ✽.Then User Should be logged in to user Dashboard(Features/Login.feature:21)\r\n",
-              "status": "failed"
-            },
-            "line": 21,
-            "name": "User Should be logged in to user Dashboard",
-            "match": {
-              "location": "loginStepDefiniton.user_Should_be_logged_in_to_user_Dashboard()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 15,
-            "name": "@MultipleUsers"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1073280200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on TEST Environment page",
-            "match": {
-              "location": "loginStepDefiniton.user_is_on_TEST_Environment_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1664338700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Initializer.beforeHooks()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Login to My Account with multiple users",
-        "description": "",
-        "id": "login-to-test-environment;login-to-my-account-with-multiple-users;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 703824300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Initializer.afterHooks()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 127718300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User click on MyAccount",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_MyAccount()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 328830900,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User click on Login",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_Login()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 293306200,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters username \u0027teacher@tekSchool.us\u0027 and Password \u0027teacher\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "teacher@tekSchool.us",
-                  "offset": 22
-                },
-                {
-                  "val": "teacher",
-                  "offset": 58
-                }
-              ],
-              "location": "loginStepDefiniton.user_enters_username_sdet_tekschool_us_and_Password_sdet(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 241499400,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User click on Login button",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7457100,
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Account Login]\u003e but was:\u003c[My Account]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat stepDefinitions.loginStepDefiniton.user_Should_be_logged_in_to_user_Dashboard(loginStepDefiniton.java:57)\r\n\tat ✽.Then User Should be logged in to user Dashboard(Features/Login.feature:21)\r\n",
-              "status": "failed"
-            },
-            "line": 21,
-            "name": "User Should be logged in to user Dashboard",
-            "match": {
-              "location": "loginStepDefiniton.user_Should_be_logged_in_to_user_Dashboard()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 15,
-            "name": "@MultipleUsers"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1146294200,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on TEST Environment page",
-            "match": {
-              "location": "loginStepDefiniton.user_is_on_TEST_Environment_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1848256000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Initializer.beforeHooks()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "Login to My Account with multiple users",
-        "description": "",
-        "id": "login-to-test-environment;login-to-my-account-with-multiple-users;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 732064900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Initializer.afterHooks()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 134392700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User click on MyAccount",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_MyAccount()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 258797000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User click on Login",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_Login()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 300336500,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User enters username \u0027consumer@tekschool.us\u0027 and Password \u0027JBond\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "consumer@tekschool.us",
-                  "offset": 22
-                },
-                {
-                  "val": "JBond",
-                  "offset": 59
-                }
-              ],
-              "location": "loginStepDefiniton.user_enters_username_sdet_tekschool_us_and_Password_sdet(String,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 314151500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User click on Login button",
-            "match": {
-              "location": "loginStepDefiniton.user_click_on_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7598000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User Should be logged in to user Dashboard",
-            "match": {
-              "location": "loginStepDefiniton.user_Should_be_logged_in_to_user_Dashboard()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 15,
-            "name": "@MultipleUsers"
+            "line": 6,
+            "name": "@loginTest"
           }
         ]
       }

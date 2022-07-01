@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:Features", // featrues tells Cucumber options where features are located
 		glue = { "stepDefinitions" }, // glue tells cucumber options where Step Definitions are located
-		tags = {"@MultipleUsers"}, 
+		tags = {"@loginTest"}, 
 		dryRun = false, // dry run if sets to false checks if all steps in feature files has step
 									// definitons.
 		monochrome = true, // if set to true, makes the console output readable.
